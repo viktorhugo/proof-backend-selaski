@@ -126,12 +126,12 @@ erDiagram
     User {
         string id PK
         string name
-        string email UNIQUE
+        string email UK
     }
     Message {
         string id PK
         string content
-        string createdAt
+        datetime createdAt
         string userId FK
     }
     User ||--o{ Message : has
