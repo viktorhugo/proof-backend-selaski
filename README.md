@@ -123,8 +123,6 @@ The following is the Entity-Relationship Diagram (ERD) for the application:
 
 ```mermaid
 erDiagram
-
-    User ||--o{ Message : has
     User {
         Int id PK
         String name
@@ -136,6 +134,7 @@ erDiagram
         DateTime createdAt
         Int userId FK
     }
+    User ||--o{ Message : has
 ```
 ### Clean Architecture
 
