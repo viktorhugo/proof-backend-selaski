@@ -123,18 +123,18 @@ The following is the Entity-Relationship Diagram (ERD) for the application:
 
 ```mermaid
 erDiagram
-  `User {
-    string id PK
-    string name
-    string email UNIQUE
-  }
-  Message {
-    string id PK
-    string content
-    string createdAt
-    string userId FK
-  }
-  Us`er ||--o{ Message : has
+    User {
+        string id PK
+        string name
+        string email UNIQUE
+    }
+    Message {
+        string id PK
+        string content
+        string createdAt
+        string userId FK
+    }
+    User ||--o{ Message : has
 ```
 
 ### Clean Architecture
