@@ -124,15 +124,15 @@ The following is the Entity-Relationship Diagram (ERD) for the application:
 ```mermaid
 erDiagram
     User {
-        Int id PK
-        String name
-        String email UNIQUE
+        string id PK
+        string name
+        string email UNIQUE
     }
     Message {
-        Int id PK
-        String content
-        DateTime createdAt
-        Int userId FK
+        string id PK
+        string content
+        string createdAt
+        string userId FK
     }
     User ||--o{ Message : has
 ```
